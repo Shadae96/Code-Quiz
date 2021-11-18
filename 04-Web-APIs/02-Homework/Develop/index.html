@@ -4,20 +4,19 @@
     <title>Coding Quiz</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="./style.css"/>
   </head> 
 
   <body>
       <header>
         <div>
-          <h1>View Highscores </h1>
+          <h4> View High Scores: <span class= "scores"> 100</span> </h4>
         </div>
 
         <div class= "Timer"> 
         <div>
           <div class = "Timer-text"></div>
-          <h1>Time</h1>
-          <div class= timer-count>75</div>
+          <h4> Time: <span class= "time"> 75 </span> </h4>
          </div>
         </div>
       </header>
@@ -29,7 +28,7 @@
         <p>
           Try to answer the following code-related questions within th time limit. Keep in mind that incorrect answers will penalize your scoretime by ten seconds.
         </p>
-        <button class= start-button> Start Quiz</button>
+        <button class= "button"> Start Quiz</button>
         </section>
           
       <div> 
@@ -79,14 +78,15 @@
       <h1> Your final score is: <span class= "score"> 22 </span> </h1>
       <div class = "intials"> Enter intials </div>
       <input type="text">
-      <button class = "submit-button">Submit</button>
+      <button class = "button">Submit</button>
     </section>
 
-    <section>
+    <section id="wrapper"><section>
       <h2>Highscores</h2>
       <div class = "Highscores"></div>
-      <button class = "Go Back"> Go Back</button>
-      <button class = "Clear Highscores"> Clear Highscores</button>
+      <button class = "button"> Go Back</button>
+      <button class = "button"> Clear Highscores</button>
     </section>
   </main>
+  <script src="./script.js"></script>
   </body>
