@@ -1,3 +1,8 @@
+*, * ::before, *::after {
+  box-sizing: border-box;
+}
+
+
 body {
     font-family: Arial;
     margin: 0;
@@ -6,9 +11,8 @@ body {
     min-height: 100vh;
     justify-content: flex-start;
     background: white;
-  }
-
-main {text-align:center;}
+    text-align:center;}
+   
 
 h1 {
     letter-spacing: 0.10em;
@@ -40,17 +44,16 @@ h4 {color: black;
 
 .intials{font-size: 30px;}
 
-li { list-style-type: none;
-
-}
+li { list-style-type: none;}
 
 
-  .button {
+  .btn {
     font-size: 30px;
-    width: 60ox;
+    width: 300px;
     color: white;
     background-color: purple;
-    text-align: center;
+    /* text-align: center;
+    justify-content: center; */
   }
 
   p {font-size: 25px;
@@ -58,3 +61,25 @@ li { list-style-type: none;
 
   .section{padding: 30px;
   margin-bottom: 100px;}
+
+  .container {
+    width: 800px;
+    max-width: 80%;
+    text-align: center;
+    align-content: center;
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+  } 
+
+  #answer- { text-align: center;
+    align-content: center;
+    margin: 20%;
+
+  }
+
+  /* .btngrid {display: grid;
+    text-align: center;
+  } */
+
+  /* .question-container {align-content: center;} */
