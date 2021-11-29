@@ -3,25 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="css-rest" type="text/css" href="./Assets/reset.css">
-    <link rel="stylesheet" type="text/css" href="./Assets/style.css"/>
+    <link rel="css-rest" type="text/css" href="./Assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="./Assets/css/style.css"/>
     <title>Coding Quiz</title>
   </head> 
 
   <body>
-      <header>
-        <div>
+      <header class= header>
+        <div class=container id=Hcontainer>
           <h4> View High Scores: <span class= "scores"> 100</span> </h4>
-        </div>
 
-        <div class= "Timer"> 
-        <div>
-          <div class = "Timer-text"></div>
-          <h4> Time: <span id= "time"> 75 </span> </h4>
-         </div>
+          <h2 id="timer"><span id=counter>90</span> seconds</h2>
         </div>
       </header>
-
 
       <div class = "starter">
         <div class= "instructions" id = "ins-starter hide">
@@ -62,6 +56,6 @@
       <button class = "btn"> Go Back</button>
       <button class = "btn"> Clear Highscores</button>
     </section>
-    <script src="./Assets/script.js"></script>
+    <script src="./Assets/JS/script.js"></script>
   </body>
   </html>
