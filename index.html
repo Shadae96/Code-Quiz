@@ -11,26 +11,23 @@
   <body>
       <header class= header>
         <div class=container id=Hcontainer>
-          <h4> View High Scores: <span class= "scores"> 100</span> </h4>
+          <h4 id="HighScoresTBD"> <a href="./highscores.html">High Scores</a></h4>
 
           <h2 id="timer"><span id=counter>90</span> seconds</h2>
         </div>
       </header>
 
-      <div class = "starter">
-        <div class= "instructions" id = "ins-starter hide">
-          <H1> Coding Quiz Challenge </H1>
-          <p>Try to answer the following code-related questions within th time limit. Keep in mind that incorrect answers will penalize your scoretime by ten seconds.
+      <div class = "container" id=StarterContainer data-id="0" data-state="visible">
+        <div class= "instructions">
+          <H1 id=quiz-header>Coding Quiz Challenge </H1>
+          <p id=quizdescription> Try to answer the following code-related questions within th time limit. Keep in mind that incorrect answers will penalize your scoretime by ten seconds.
         </p>
-        </div>
-        <div id="controls">
-          <button id = "start-btn" class= "start-btn btn hide"> Start Quiz</button>
+        <button id = "start-btn" class= "btn"> Start Quiz</button>
         </div>
       </div>
     
 
-        <div class = "container">
-              <div id = "question-container" class= "hide">
+        <div class = "container" id="question-container" data-id="1" data-state="hidden">
                 <h2><div id = "question"> Question </div></h2>
                 <div id = "answer-buttons" class= "btn-grid">
                   <button class="btn"> Answer 1</button>
@@ -38,24 +35,19 @@
                   <button class="btn"> Answer 3</button>
                   <button class="btn"> Answer 4</button>
                 </div>
-            </div>
           </div>
     
-    
-    <section>
-      <h1 class = "Large-Font"> All Done! </h1>
+
+    <section class=container id=allDoneContainer data-id="2" data-state="hidden"> 
+      <h1 id=allDoneSection> All Done! </h1>
       <h1> Your final score is: <span class= "score"> 22 </span> </h1>
       <div class = "intials"> Enter intials </div>
       <input type="text">
       <button class = "button">Submit</button>
     </section>
 
-    <section id="wrapper"><section>
-      <h2>Highscores</h2>
-      <div class = "Highscores"></div>
-      <button class = "btn"> Go Back</button>
-      <button class = "btn"> Clear Highscores</button>
-    </section>
     <script src="./Assets/JS/script.js"></script>
+    <script src="./Assets/JS/helper.js"></script>
+    <script src="./Assets/JS/highscores.js"></script>
   </body>
   </html>
