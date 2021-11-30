@@ -1,9 +1,10 @@
 const startButton = document.getElementById('start-btn')
 const startQuiz= document.querySelector(".starter")
-const questionContainer= document.getElementById("container")
+const questionContainer= document.getElementById("question-container")
+const startContainer= document.getElementById("StarterContainer")
 let shuffledQuestions, currectQuestionIndex
-let questionElement = document.getElementById ("question")
-let answerButtonsElement = document.getElementById("answer-btn")
+let questionElement = document.getElementById ("answer-buttons")
+let answerButtonsElement = document.getElementById("btn")
 var timerEl = document.getElementById("time");
 var timerCount;
 var timer;
@@ -11,11 +12,11 @@ var timer;
 startButton.addEventListener('click', startGame)
 
 function startGame() {
-console.log('started')
-startButton.classList.add('hide')
-questionContainer.classList.remove('hide')
-shuffledQuestions = questions.sort(()=> Math.random() -.5);
-currentQuestionIndex=0;
+console.log('The game has started')
+startContainer.style.display ='none';
+questionContainer.style.display= 'block';
+shuffledQuestions = question.sort(()=> Math.random()- .5)
+currectQuestionIndex=0
 startTimer();
 setNextQuestion();
 }
